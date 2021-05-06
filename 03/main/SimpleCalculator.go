@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"senzflow/PlayWithCompilerGo/three/ASTNode"
-	"senzflow/PlayWithCompilerGo/three/ASTNodeType"
-	"senzflow/PlayWithCompilerGo/three/TokenType"
-	"senzflow/PlayWithCompilerGo/three/lexer"
 	"strconv"
+
+	"github.com/springzero/PlayWithCompilerGo/03/ASTNode"
+	"github.com/springzero/PlayWithCompilerGo/03/ASTNodeType"
+	"github.com/springzero/PlayWithCompilerGo/03/TokenType"
+	"github.com/springzero/PlayWithCompilerGo/03/lexer"
 )
 
 type SimpleCalculator struct {

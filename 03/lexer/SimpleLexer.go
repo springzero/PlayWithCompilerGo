@@ -3,7 +3,8 @@ package lexer
 import (
 	"bytes"
 	"fmt"
-	"senzflow/PlayWithCompilerGo/three/TokenType"
+
+	"github.com/springzero/PlayWithCompilerGo/03/TokenType"
 )
 
 //---token define

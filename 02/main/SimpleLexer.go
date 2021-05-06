@@ -3,7 +3,8 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"senzflow/PlayWithCompilerGo/02/TokenType"
+
+	"github.com/springzero/PlayWithCompilerGo/02/TokenType"
 )
 
 //---token define
@@ -134,9 +135,9 @@ func (lex *SimpleLexer) initToken(ch byte) DfaState {
 
 func (lex SimpleLexer) Tokenize(code string) SimpleTokenReader {
 	lex.tokens = []SimpleToken{}
-	reader := bytes.NewBufferString(code)
 	lex.tokenText = ""
 	lex.token = SimpleToken{}
+	reader := bytes.NewBufferString(code)
 	var ich byte = 0
 	var ch byte = 0
 	var state DfaState = Initial
